@@ -1,0 +1,1060 @@
+/* =========================================================
+   AB ARCHITECT
+   CONTATTI — CONTATTI.CSS
+   ========================================================= */
+
+
+/* =========================================================
+   VARIABILI
+   ========================================================= */
+
+.contact-page {
+
+    --contact-paper: #f2eee7;
+    --contact-ink: #1c1b18;
+    --contact-muted: #77736b;
+    --contact-line: rgba(28, 27, 24, 0.18);
+    --contact-dark: #1c1b18;
+
+    margin: 0;
+    background: var(--contact-paper);
+    color: var(--contact-ink);
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   RESET SOLO CONTATTI
+   ========================================================= */
+
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+
+    box-sizing: border-box;
+
+}
+
+
+.contact-page a {
+
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+.contact-page h1,
+.contact-page h2,
+.contact-page p {
+
+    margin-top: 0;
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.contact-header {
+
+    position: relative;
+
+    width: 100%;
+
+    padding: 32px 5vw;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    align-items: center;
+
+    background: var(--contact-paper);
+
+    color: var(--contact-ink);
+
+}
+
+
+/* TORNA INDIETRO */
+
+.contact-back-home {
+
+    justify-self: start;
+
+    font-size: 11px;
+
+    letter-spacing: 0.08em;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+.contact-back-home:hover {
+
+    opacity: 0.5;
+
+}
+
+
+/* CENTRO */
+
+.contact-header-label {
+
+    justify-self: center;
+
+    font-size: 9px;
+
+    letter-spacing: 0.2em;
+
+    color: var(--contact-muted);
+
+}
+
+
+/* DESTRA */
+
+.contact-header-location {
+
+    justify-self: end;
+
+    font-size: 9px;
+
+    letter-spacing: 0.2em;
+
+    color: var(--contact-muted);
+
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.contact-hero {
+
+    min-height: 78vh;
+
+    padding: 70px 9vw 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid var(--contact-line);
+
+}
+
+
+.contact-number {
+
+    font-size: 10px;
+
+    letter-spacing: 0.25em;
+
+    color: var(--contact-muted);
+
+}
+
+
+.contact-hero-content {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.6fr;
+
+    gap: 8vw;
+
+    align-items: end;
+
+    margin-top: auto;
+
+    padding-top: 18vh;
+
+}
+
+
+.contact-hero h1 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(65px, 9vw, 135px);
+
+    line-height: 0.88;
+
+    font-weight: 400;
+
+    letter-spacing: -0.04em;
+
+}
+
+
+.contact-hero h1 em {
+
+    font-weight: 400;
+
+    color: var(--contact-muted);
+
+}
+
+
+.contact-intro-text {
+
+    max-width: 330px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.contact-intro-text p {
+
+    margin: 0 0 24px;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    color: #5f5b54;
+
+}
+
+
+.contact-intro-text p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   DETTAGLI
+   ========================================================= */
+
+.contact-details {
+
+    padding: 120px 9vw 150px;
+
+    background: var(--contact-paper);
+
+}
+
+
+.contact-details-label {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid var(--contact-line);
+
+    font-size: 10px;
+
+    letter-spacing: 0.22em;
+
+    color: var(--contact-muted);
+
+}
+
+
+.contact-details-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    column-gap: 10vw;
+
+}
+
+
+.contact-block {
+
+    padding: 55px 0;
+
+    border-bottom: 1px solid var(--contact-line);
+
+    min-width: 0;
+
+}
+
+
+.contact-label {
+
+    display: block;
+
+    margin-bottom: 22px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.2em;
+
+    text-transform: uppercase;
+
+    color: var(--contact-muted);
+
+}
+
+
+.contact-value {
+
+    display: block;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(23px, 2.5vw, 34px);
+
+    line-height: 1.25;
+
+    font-weight: 400;
+
+    color: var(--contact-muted);
+
+    overflow-wrap: anywhere;
+
+}
+
+
+.contact-value:hover {
+
+    color: var(--contact-ink);
+
+}
+
+
+address.contact-value {
+
+    font-style: normal;
+
+}
+
+
+.contact-social {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+
+.contact-social a {
+
+    width: fit-content;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(23px, 2.5vw, 34px);
+
+    line-height: 1.2;
+
+    color: var(--contact-muted);
+
+    text-decoration: underline;
+
+    text-underline-offset: 7px;
+
+}
+
+
+.contact-social a:hover {
+
+    color: var(--contact-ink);
+
+}
+
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.contact-cta {
+
+    min-height: 75vh;
+
+    padding: 100px 7vw;
+
+    background: var(--contact-dark);
+
+    color: #fff;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.contact-cta-small {
+
+    margin-bottom: 40px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
+
+    color: rgba(255,255,255,0.45);
+
+}
+
+
+.contact-cta h2 {
+
+    margin: 0;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: clamp(58px, 8vw, 120px);
+
+    line-height: 0.9;
+
+    font-weight: 400;
+
+    letter-spacing: -0.035em;
+
+}
+
+
+.contact-cta h2 em {
+
+    color: #a9a39a;
+
+    font-weight: 400;
+
+}
+
+
+.contact-cta-button {
+
+    margin-top: 60px;
+
+    padding: 18px 30px;
+
+    border: 1px solid #fff;
+
+    background: transparent;
+
+    color: #fff;
+
+    font-size: 10px;
+
+    letter-spacing: 0.2em;
+
+    text-transform: uppercase;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease;
+
+}
+
+
+.contact-cta-button:hover {
+
+    background: #fff;
+
+    color: var(--contact-dark);
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.contact-footer {
+
+    position: relative;
+
+    width: 100%;
+
+    min-height: 330px;
+
+    padding: 70px 5vw 105px;
+
+    background: var(--contact-dark);
+
+    color: #f2eee7;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.2fr 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.contact-footer .footer-logo {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: flex-start;
+
+}
+
+
+.contact-footer .footer-logo img {
+
+    width: 115px;
+
+    height: auto;
+
+    display: block;
+
+    filter: brightness(0) invert(1);
+
+    opacity: 0.95;
+
+}
+
+
+/* =========================================================
+   CENTRO
+   ========================================================= */
+
+.contact-footer .footer-center {
+
+    text-align: center;
+
+    padding-top: 2px;
+
+}
+
+
+.contact-footer .footer-studio-name {
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.08em;
+
+    line-height: 1;
+
+}
+
+
+.contact-footer .footer-tagline {
+
+    margin-top: 18px;
+
+    font-family: "Playfair Display", Georgia, serif;
+
+    font-size: 15px;
+
+    color: rgba(242,238,231,0.55);
+
+}
+
+
+.contact-footer .footer-tagline em {
+
+    font-weight: 400;
+
+}
+
+
+/* =========================================================
+   DESTRA
+   ========================================================= */
+
+.contact-footer .footer-right {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    text-align: right;
+
+}
+
+
+.contact-footer .footer-contact-name {
+
+    font-size: 15px;
+
+    letter-spacing: 0.06em;
+
+    line-height: 1.3;
+
+}
+
+
+.contact-footer .footer-contact-role {
+
+    margin-top: 4px;
+
+    font-size: 12px;
+
+    color: rgba(242,238,231,0.6);
+
+}
+
+
+.contact-footer .footer-contact-details {
+
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    line-height: 1.75;
+
+    letter-spacing: 0.025em;
+
+    color: rgba(242,238,231,0.78);
+
+}
+
+
+.contact-footer .footer-contact-details a {
+
+    color: #fff;
+
+}
+
+
+.contact-footer .footer-social {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 28px;
+
+}
+
+
+.contact-footer .footer-social a {
+
+    width: 34px;
+
+    height: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid rgba(242,238,231,0.45);
+
+    border-radius: 50%;
+
+    color: rgba(242,238,231,0.85);
+
+    font-size: 9px;
+
+    font-weight: 400;
+
+    letter-spacing: 0.08em;
+
+    transition:
+        background 0.35s ease,
+        color 0.35s ease;
+
+}
+
+
+.contact-footer .footer-social a:hover {
+
+    background: #f2eee7;
+
+    color: #1c1b18;
+
+}
+
+
+.contact-footer .footer-privacy {
+
+    margin-top: 25px;
+
+    font-size: 9px;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+
+    color: rgba(242,238,231,0.4);
+
+}
+
+
+.contact-footer .footer-privacy:hover {
+
+    color: #fff;
+
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+   ========================================================= */
+
+.contact-footer .footer-bottom {
+
+    position: absolute;
+
+    left: 5vw;
+
+    right: 5vw;
+
+    bottom: 28px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(242,238,231,0.18);
+
+    font-size: 9px;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+
+    color: rgba(242,238,231,0.4);
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+
+    .contact-header {
+
+        padding: 25px 7vw;
+
+        grid-template-columns: 1fr auto;
+
+    }
+
+
+    .contact-header-label {
+
+        display: none;
+
+    }
+
+
+    .contact-header-location {
+
+        justify-self: end;
+
+    }
+
+
+    .contact-hero {
+
+        min-height: 75vh;
+
+        padding: 60px 8vw 85px;
+
+    }
+
+
+    .contact-hero-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+
+        padding-top: 15vh;
+
+    }
+
+
+    .contact-hero h1 {
+
+        font-size: clamp(58px, 14vw, 85px);
+
+    }
+
+
+    .contact-intro-text {
+
+        max-width: 420px;
+
+    }
+
+
+    .contact-intro-text p {
+
+        font-size: 16px;
+
+    }
+
+
+    .contact-details {
+
+        padding: 90px 8vw 110px;
+
+    }
+
+
+    .contact-details-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .contact-block {
+
+        padding: 40px 0;
+
+    }
+
+
+    .contact-cta {
+
+        min-height: 65vh;
+
+    }
+
+
+    .contact-cta h2 {
+
+        font-size: clamp(55px, 13vw, 80px);
+
+    }
+
+
+    .contact-footer {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+        padding: 55px 8vw 110px;
+
+    }
+
+
+    .contact-footer .footer-logo img {
+
+        width: 105px;
+
+    }
+
+
+    .contact-footer .footer-center {
+
+        text-align: left;
+
+    }
+
+
+    .contact-footer .footer-right {
+
+        align-items: flex-start;
+
+        text-align: left;
+
+    }
+
+
+    .contact-footer .footer-social {
+
+        justify-content: flex-start;
+
+    }
+
+
+    .contact-footer .footer-bottom {
+
+        left: 8vw;
+
+        right: 8vw;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+
+    .contact-header {
+
+        padding: 22px 7vw;
+
+    }
+
+
+    .contact-back-home {
+
+        font-size: 10px;
+
+    }
+
+
+    .contact-header-location {
+
+        font-size: 8px;
+
+    }
+
+
+    .contact-hero {
+
+        min-height: 72vh;
+
+        padding: 45px 7vw 70px;
+
+    }
+
+
+    .contact-hero h1 {
+
+        font-size: 57px;
+
+    }
+
+
+    .contact-intro-text p {
+
+        font-size: 15px;
+
+    }
+
+
+    .contact-details {
+
+        padding: 75px 7vw 90px;
+
+    }
+
+
+    .contact-details-label {
+
+        font-size: 8px;
+
+    }
+
+
+    .contact-block {
+
+        padding: 38px 0;
+
+    }
+
+
+    .contact-value,
+    .contact-social a {
+
+        font-size: 25px;
+
+    }
+
+
+    .contact-cta {
+
+        min-height: 60vh;
+
+        padding: 80px 7vw;
+
+    }
+
+
+    .contact-cta h2 {
+
+        font-size: 52px;
+
+    }
+
+
+    .contact-cta-button {
+
+        margin-top: 45px;
+
+    }
+
+
+    .contact-footer {
+
+        padding: 45px 7vw 110px;
+
+    }
+
+
+    .contact-footer .footer-logo img {
+
+        width: 100px;
+
+    }
+
+
+    .contact-footer .footer-studio-name {
+
+        font-size: 17px;
+
+    }
+
+
+    .contact-footer .footer-contact-details {
+
+        font-size: 12px;
+
+    }
+
+
+    .contact-footer .footer-bottom {
+
+        left: 7vw;
+
+        right: 7vw;
+
+        line-height: 1.6;
+
+    }
+
+}

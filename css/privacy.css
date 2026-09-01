@@ -1,0 +1,576 @@
+/* =========================================================
+   AB ARCHITECT
+   PRIVACY POLICY
+========================================================= */
+
+.privacy-page {
+    margin: 0;
+    padding: 0;
+    background: #f2eee7;
+    color: #1c1b18;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.privacy-header {
+    width: 100%;
+    padding: 32px 6vw;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid rgba(28, 27, 24, .15);
+
+    font-size: 10px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+}
+
+.privacy-back {
+    color: #1c1b18;
+    text-decoration: none;
+    transition: opacity .3s ease;
+}
+
+.privacy-back:hover {
+    opacity: .55;
+}
+
+.privacy-header-label {
+    justify-self: center;
+
+    font-size: 10px;
+    letter-spacing: .25em;
+}
+
+.privacy-header-location {
+    justify-self: end;
+
+    font-size: 10px;
+    letter-spacing: .18em;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.privacy-main {
+    width: 100%;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.privacy-intro {
+    width: min(1180px, 84%);
+    margin: 0 auto;
+
+    padding: 120px 0 130px;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    gap: 8vw;
+}
+
+.privacy-number {
+    padding-top: 12px;
+
+    font-size: 10px;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+
+    color: #77736b;
+}
+
+.privacy-title {
+    margin: 0;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(70px, 10vw, 145px);
+
+    line-height: .86;
+
+    font-weight: 400;
+
+    letter-spacing: -.04em;
+}
+
+.privacy-title em {
+    color: #77736b;
+    font-weight: 400;
+}
+
+.privacy-lead {
+    max-width: 570px;
+
+    margin-top: 45px;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #66625b;
+}
+
+
+/* =========================================================
+   CONTENUTO
+========================================================= */
+
+.privacy-content {
+    width: min(900px, 78%);
+    margin: 0 auto;
+
+    padding-bottom: 150px;
+}
+
+
+/* =========================================================
+   SEZIONI
+========================================================= */
+
+.privacy-section {
+    padding: 65px 0;
+
+    border-top:
+        1px solid
+        rgba(28, 27, 24, .16);
+}
+
+
+/* =========================================================
+   TITOLI
+========================================================= */
+
+.privacy-section h2 {
+    margin: 0 0 28px;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(28px, 3vw, 42px);
+
+    line-height: 1.05;
+
+    font-weight: 400;
+}
+
+.privacy-section h3 {
+    margin: 45px 0 18px;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 24px;
+
+    line-height: 1.1;
+
+    font-weight: 400;
+}
+
+
+/* =========================================================
+   TESTO
+========================================================= */
+
+.privacy-section p {
+    max-width: 760px;
+
+    margin: 0 0 20px;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    color: #4f4c46;
+}
+
+.privacy-section strong {
+    color: #1c1b18;
+}
+
+.privacy-section a {
+    color: #1c1b18;
+
+    text-decoration: underline;
+
+    text-underline-offset: 4px;
+}
+
+
+/* =========================================================
+   LISTE
+========================================================= */
+
+.privacy-section ul,
+.privacy-section ol {
+    max-width: 760px;
+
+    margin: 25px 0 30px;
+
+    padding-left: 25px;
+}
+
+.privacy-section li {
+    margin-bottom: 15px;
+
+    padding-left: 8px;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+
+    color: #4f4c46;
+}
+
+.privacy-section ol li::marker {
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    color: #77736b;
+}
+
+
+/* =========================================================
+   BLOCCO TITOLARE
+========================================================= */
+
+.privacy-owner {
+    margin-top: 30px;
+
+    padding: 35px;
+
+    background: #e8e2d8;
+}
+
+.privacy-owner p {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   BLOCCO CONTATTI
+========================================================= */
+
+.privacy-contact {
+    margin-top: 80px;
+
+    padding: 80px 70px;
+
+    background: #1c1b18;
+
+    color: #f2eee7;
+
+    text-align: center;
+}
+
+.privacy-contact > span {
+    display: block;
+
+    margin-bottom: 30px;
+
+    font-size: 10px;
+
+    letter-spacing: .25em;
+
+    text-transform: uppercase;
+
+    color: rgba(242, 238, 231, .55);
+}
+
+.privacy-contact h2 {
+    margin: 0;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(42px, 6vw, 75px);
+
+    line-height: .95;
+
+    font-weight: 400;
+}
+
+.privacy-contact a {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    margin-top: 38px;
+
+    padding-bottom: 9px;
+
+    border-bottom:
+        1px solid
+        rgba(242, 238, 231, .65);
+
+    color: #f2eee7;
+
+    text-decoration: none;
+
+    font-size: 10px;
+
+    letter-spacing: .18em;
+
+    text-transform: uppercase;
+
+    transition:
+        gap .4s ease,
+        border-color .3s ease;
+}
+
+.privacy-contact a:hover {
+    gap: 28px;
+
+    border-color: #f2eee7;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.privacy-footer {
+    width: 100%;
+
+    padding: 55px 6vw;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr;
+
+    gap: 40px;
+
+    background: #1c1b18;
+
+    color: #f2eee7;
+
+    border-top:
+        1px solid
+        rgba(242, 238, 231, .15);
+}
+
+.privacy-footer > div {
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    letter-spacing: .08em;
+}
+
+.privacy-footer > div:nth-child(2) {
+    text-align: center;
+
+    color:
+        rgba(242, 238, 231, .65);
+}
+
+.privacy-footer > div:nth-child(3) {
+    text-align: right;
+
+    color:
+        rgba(242, 238, 231, .65);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+    .privacy-header {
+        padding: 25px 7vw;
+
+        grid-template-columns:
+            1fr auto;
+    }
+
+    .privacy-header-label {
+        display: none;
+    }
+
+    .privacy-intro {
+        width: 84%;
+
+        padding:
+            85px 0
+            95px;
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .privacy-number {
+        padding-top: 0;
+    }
+
+    .privacy-title {
+        font-size:
+            clamp(65px, 15vw, 105px);
+    }
+
+    .privacy-lead {
+        margin-top: 35px;
+
+        font-size: 14px;
+    }
+
+    .privacy-content {
+        width: 84%;
+
+        padding-bottom: 100px;
+    }
+
+    .privacy-section {
+        padding: 50px 0;
+    }
+
+    .privacy-contact {
+        padding:
+            65px 35px;
+    }
+
+    .privacy-footer {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding:
+            45px 7vw;
+    }
+
+    .privacy-footer > div:nth-child(2),
+    .privacy-footer > div:nth-child(3) {
+        text-align: left;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .privacy-header {
+        padding:
+            22px 6vw;
+
+        font-size: 9px;
+    }
+
+    .privacy-header-location {
+        display: none;
+    }
+
+    .privacy-intro {
+        width: 88%;
+
+        padding:
+            65px 0
+            75px;
+    }
+
+    .privacy-title {
+        font-size: 58px;
+    }
+
+    .privacy-lead {
+        margin-top: 28px;
+
+        font-size: 13px;
+
+        line-height: 1.65;
+    }
+
+    .privacy-content {
+        width: 88%;
+    }
+
+    .privacy-section {
+        padding: 42px 0;
+    }
+
+    .privacy-section h2 {
+        font-size: 30px;
+
+        margin-bottom: 22px;
+    }
+
+    .privacy-section h3 {
+        font-size: 22px;
+
+        margin-top: 35px;
+    }
+
+    .privacy-section p,
+    .privacy-section li {
+        font-size: 13px;
+
+        line-height: 1.75;
+    }
+
+    .privacy-section ul,
+    .privacy-section ol {
+        padding-left: 21px;
+    }
+
+    .privacy-owner {
+        padding: 25px;
+    }
+
+    .privacy-contact {
+        margin-top: 45px;
+
+        padding:
+            55px 25px;
+    }
+
+    .privacy-contact h2 {
+        font-size: 44px;
+    }
+
+    .privacy-contact a {
+        font-size: 9px;
+
+        letter-spacing: .12em;
+    }
+
+    .privacy-footer {
+        padding:
+            40px 6vw;
+    }
+}
