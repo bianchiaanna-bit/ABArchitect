@@ -373,7 +373,7 @@ document.addEventListener("DOMContentLoaded", () => {
        SOLO IMMAGINI LOCALI:
        
        01 — Villa_Altavilla.jpg
-       02 — Hero2.jpg
+       02 Piscina.jpg
     ===================================================== */
 
     const hero =
@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             "immagini/Villa_Altavilla.jpg",
 
-            "immagini/Hero2.jpg"
+            "immagini/Piscina.jpg"
 
         ];
 
@@ -412,7 +412,7 @@ document.addEventListener("DOMContentLoaded", () => {
          * Indice dell'immagine attualmente visualizzata.
          *
          * 0 = Villa_Altavilla.jpg
-         * 1 = Hero2.jpg
+         * 1 = Piscina.jpg
          */
 
         let currentImage = 0;
