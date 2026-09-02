@@ -5,7 +5,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
 
-
     /* =====================================================
        ELEMENTI
     ===================================================== */
@@ -23,24 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
     if (menu && menuTrigger) {
 
         /*
-         * Sulla Home il bottone compare dopo la Hero.
-         * Sulle pagine interne è sempre visibile.
+         * Sulle pagine interne il bottone deve essere sempre visibile.
+         * Sulla Home invece viene gestito dallo scroll.
          */
 
         const intro = document.querySelector(".opening .intro");
 
-
         if (intro) {
 
-            /* =============================================
-               HOME
-            ============================================= */
+            /* HOME */
 
             const updateMenuVisibility = () => {
 
                 const introRect =
                     intro.getBoundingClientRect();
-
 
                 if (introRect.top > 80) {
 
@@ -54,23 +49,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
             };
 
-
             window.addEventListener(
                 "scroll",
                 updateMenuVisibility,
                 { passive: true }
             );
 
-
             updateMenuVisibility();
-
 
         } else {
 
-            /* =============================================
-               PAGINE INTERNE
-               Progetti / Chi siamo / Contatti / Privacy
-            ============================================= */
+            /*
+             * PAGINE INTERNE:
+             * Progetti / Chi siamo / Contatti / Privacy
+             */
 
             menuTrigger.classList.add("visible");
 
@@ -78,14 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         /* =================================================
-           APRI / CHIUDI MENU
+           APRI MENU
         ================================================= */
 
         menuTrigger.addEventListener("click", () => {
 
             const isOpen =
                 menu.classList.contains("open");
-
 
             if (isOpen) {
 
@@ -101,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         /* =================================================
-           FUNZIONE APRI MENU
+           FUNZIONE APRI
         ================================================= */
 
         function openMenu() {
@@ -110,12 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.body.classList.add("menu-open");
 
-
             menuTrigger.setAttribute(
                 "aria-expanded",
                 "true"
             );
-
 
             menuTrigger.setAttribute(
                 "aria-label",
@@ -126,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         /* =================================================
-           FUNZIONE CHIUDI MENU
+           FUNZIONE CHIUDI
         ================================================= */
 
         function closeMenu() {
@@ -135,12 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.body.classList.remove("menu-open");
 
-
             menuTrigger.setAttribute(
                 "aria-expanded",
                 "false"
             );
-
 
             menuTrigger.setAttribute(
                 "aria-label",
@@ -216,7 +203,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 ".question-button"
             );
 
-
         const answer =
             question.querySelector(
                 ".answer"
@@ -235,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 /* =========================================
-                   CHIUDE LE ALTRE DOMANDE
+                   CHIUDE LE ALTRE
                 ========================================= */
 
                 questions.forEach(
@@ -270,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 /* =========================================
-                   APRI / CHIUDI DOMANDA
+                   APRI / CHIUDI
                 ========================================= */
 
                 if (isOpen) {
@@ -279,16 +265,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         "open"
                     );
 
-
                     answer.style.maxHeight = null;
-
 
                 } else {
 
                     question.classList.add(
                         "open"
                     );
-
 
                     answer.style.maxHeight =
                         answer.scrollHeight + "px";
@@ -367,63 +350,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       HERO HOME
-       CAMBIO AUTOMATICO TRA LE DUE IMMAGINI
-       
-       SOLO IMMAGINI LOCALI:
-       
-       01 — Villa_Altavilla.jpg
-       02 Piscina.jpg
+       HERO — CAMBIO LENTO DEL PAESAGGIO
+       SOLO HOME
     ===================================================== */
 
     const hero =
         document.querySelector(".hero");
 
-
     const heroImage =
         document.querySelector(".hero-image");
 
 
-    /*
-     * Questo codice viene eseguito solo se
-     * nella pagina esiste una Hero.
-     */
-
     if (hero && heroImage) {
-
-
-        /* =============================================
-           IMMAGINI DELLA HERO
-           
-           IMPORTANTE:
-           NON INSERIAMO PIÙ NESSUNA IMMAGINE ESTERNA.
-        ============================================= */
 
         const heroImages = [
 
-            "immagini/Villa_Altavilla.jpg",
+            "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2400&q=90",
 
-            "immagini/Piscina.jpg"
+            "https://images.unsplash.com/photo-1530789253388-582c481c54b0?auto=format&fit=crop&w=2400&q=90"
 
         ];
 
 
-        /*
-         * Indice dell'immagine attualmente visualizzata.
-         *
-         * 0 = Villa_Altavilla.jpg
-         * 1 = Piscina.jpg
-         */
-
         let currentImage = 0;
 
 
-        /* =============================================
-           PRECARICAMENTO
-           
-           Carichiamo entrambe le immagini prima
-           del cambio per evitare ritardi.
-        ============================================= */
+        /*
+         * Precarica le immagini
+         */
 
         heroImages.forEach((src) => {
 
@@ -435,78 +389,36 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =============================================
-           TRANSIZIONE FADE
-        ============================================= */
+        /*
+         * Transizione
+         */
 
         heroImage.style.transition =
             "opacity 2.5s ease-in-out";
 
 
-        /* =============================================
-           CAMBIO IMMAGINE
-           
-           La prima immagine resta visibile per 10 secondi.
-           
-           Poi:
-           
-           Villa_Altavilla
-                  ↓
-             fade out
-                  ↓
-               Hero2
-                  ↓
-             fade in
-           
-           Dopo altri 10 secondi:
-           
-               Hero2
-                  ↓
-             fade out
-                  ↓
-           Villa_Altavilla
-        ============================================= */
+        /*
+         * Cambio immagine
+         */
 
         setInterval(() => {
-
-
-            /* =========================================
-               CALCOLA PROSSIMA IMMAGINE
-            ========================================= */
 
             currentImage =
                 (currentImage + 1)
                 % heroImages.length;
 
 
-            /* =========================================
-               FADE OUT
-            ========================================= */
-
             heroImage.style.opacity = "0";
 
-
-            /* =========================================
-               CAMBIO DEL FILE
-               
-               Aspettiamo che il fade out sia
-               praticamente completato.
-            ========================================= */
 
             setTimeout(() => {
 
                 heroImage.src =
                     heroImages[currentImage];
 
-
-                /* =====================================
-                   FADE IN
-                ===================================== */
-
                 heroImage.style.opacity = "1";
 
             }, 2500);
-
 
         }, 10000);
 

@@ -736,52 +736,45 @@
 
     display: inline-block;
 
-    margin-top: 25px;
+    margin-top: 30px;
 
-    padding: 0;
+    padding-top: 11px;
 
-    border: 0;
+    border-top:
+        1px solid
+        rgba(242,238,231,.25);
 
-    font-size: 9px;
+    font-size: 10px;
 
-    letter-spacing: .12em;
+    letter-spacing: .15em;
 
     text-transform: uppercase;
 
     color: #ffffff;
 
     text-decoration: none;
-
-    transition:
-        opacity .3s ease;
 }
 
-.projects-page .footer-privacy:hover {
-
-    opacity: .6;
-}
 
 /* COPYRIGHT */
 
 .projects-page .footer-bottom {
 
-    position: absolute;
-
-    left: 5vw;
-    right: 5vw;
-    bottom: 28px;
+    grid-column: 1 / -1;
 
     display: flex;
 
-    justify-content: center;
+    justify-content: space-between;
 
     align-items: center;
+
+    margin-top: 45px;
 
     padding-top: 18px;
 
     border-top:
         1px solid
-        rgba(242,238,231,.18);
+        rgba(242,238,231,.15);
 
     font-family:
         Arial,
@@ -789,15 +782,14 @@
 
     font-size: 9px;
 
-    letter-spacing: .13em;
+    letter-spacing: .12em;
 
     text-transform: uppercase;
 
     color:
-        rgba(242,238,231,.4);
-
-    text-align: center;
+        rgba(242,238,231,.45);
 }
+
 
 /* =========================================================
    TABLET

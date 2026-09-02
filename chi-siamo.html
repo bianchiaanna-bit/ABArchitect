@@ -1,19 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="it">
 
 <head>
 
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        Alfio Bucaro — Architetto a Palermo | AB Architect
-    </title>
+    <title>Alfio Bucaro — Architetto a Palermo | AB Architect</title>
 
     <meta
         name="description"
@@ -25,11 +19,7 @@
         content="Alfio Bucaro, architetto Palermo, architetto Sicilia, AB Architect, progettazione architettonica Palermo, architettura Sicilia"
     >
 
-    <link
-        rel="stylesheet"
-        href="css/stile.css"
-    >
-
+    <link rel="stylesheet" href="css/stile.css">
 
     <style>
 
@@ -53,7 +43,8 @@
 
             width: 100%;
 
-            padding: 28px 5vw;
+            padding:
+                28px 5vw;
 
             display: flex;
 
@@ -149,112 +140,50 @@
 
         .about-intro-title em {
             color: #77736b;
-
             font-weight: 400;
         }
 
 
         /* =================================================
-           FOTO ARCHITETTO
+           MARE
         ================================================= */
 
-        .about-portrait {
+        .about-image {
             padding:
                 0 9vw
-                13vh;
-
-            background: #f2eee7;
+                12vh;
         }
 
 
-        .about-portrait-inner {
+        .about-image-frame {
             width: 100%;
 
-            max-width: 1180px;
+            height: 68vh;
 
-            margin: 0 auto;
-        }
-
-
-        .about-portrait-label {
-            margin-bottom: 18px;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: space-between;
-
-            gap: 30px;
-
-            font-family:
-                Arial,
-                sans-serif;
-
-            font-size: 9px;
-
-            line-height: 1;
-
-            letter-spacing: 0.18em;
-
-            text-transform: uppercase;
-
-            color: #77736b;
-        }
-
-
-        .about-portrait-frame {
-            position: relative;
-
-            width: 100%;
-
-            height: auto;
+            min-height: 480px;
 
             overflow: hidden;
 
-            background: #ded9d0;
+            position: relative;
         }
 
 
-        .about-portrait-frame::after {
-            content: "";
-
-            position: absolute;
-
-            inset: 0;
-
-            background:
-                rgba(242, 238, 231, 0.10);
-
-            pointer-events: none;
-        }
-
-
-        .about-portrait-frame img {
-            display: block;
-
+        .about-image-frame img {
             width: 100%;
+            height: 100%;
 
-            height: auto;
-
-            max-height: 560px;
+            display: block;
 
             object-fit: cover;
 
             object-position: center;
 
-            opacity: 0.92;
-
-            filter:
-                saturate(0.82)
-                contrast(0.97);
-
-            transform: scale(1.01);
+            transform: scale(1.025);
         }
 
 
-        .about-portrait-caption {
-            margin-top: 14px;
+        .about-image-caption {
+            margin-top: 18px;
 
             display: flex;
 
@@ -262,15 +191,9 @@
 
             gap: 30px;
 
-            font-family:
-                Arial,
-                sans-serif;
+            font-size: 9px;
 
-            font-size: 8px;
-
-            line-height: 1.4;
-
-            letter-spacing: 0.15em;
+            letter-spacing: 0.17em;
 
             text-transform: uppercase;
 
@@ -380,7 +303,6 @@
             display: flex;
 
             justify-content: space-between;
-
             align-items: flex-start;
         }
 
@@ -421,15 +343,6 @@
             line-height: 1.75;
 
             color: #5f5b53;
-        }
-
-
-        /* =================================================
-           COLLABORAZIONE
-        ================================================= */
-
-        .about-story + .about-philosophy {
-            margin-top: 0;
         }
 
 
@@ -602,35 +515,19 @@
             }
 
 
-            /* FOTO */
-
-            .about-portrait {
+            .about-image {
                 padding:
                     0 8vw
                     10vh;
             }
 
 
-            .about-portrait-label {
-                margin-bottom: 14px;
+            .about-image-frame {
+                height: 58vh;
 
-                font-size: 8px;
+                min-height: 400px;
             }
 
-
-            .about-portrait-frame img {
-                max-height: none;
-
-                opacity: 0.92;
-            }
-
-
-            .about-portrait-caption {
-                font-size: 7px;
-            }
-
-
-            /* STORY */
 
             .about-story {
                 padding:
@@ -647,8 +544,6 @@
                 margin-bottom: 50px;
             }
 
-
-            /* PHILOSOPHY */
 
             .about-philosophy {
                 min-height: auto;
@@ -674,8 +569,6 @@
             }
 
 
-            /* CLOSING */
-
             .about-closing {
                 padding:
                     12vh 8vw
@@ -687,8 +580,6 @@
                 margin-top: 10vh;
             }
 
-
-            /* FOOTER */
 
             .footer-bottom {
                 flex-direction: column;
@@ -725,43 +616,24 @@
             }
 
 
-            /* FOTO */
-
-            .about-portrait {
+            .about-image {
                 padding:
                     0 7vw
                     9vh;
             }
 
 
-            .about-portrait-label {
-                margin-bottom: 12px;
+            .about-image-frame {
+                height: 62vh;
 
-                font-size: 7px;
-
-                letter-spacing: 0.13em;
+                min-height: 430px;
             }
 
 
-            .about-portrait-frame img {
-                width: 100%;
-
-                height: auto;
-
-                opacity: 0.90;
+            .about-image-caption {
+                font-size: 8px;
             }
 
-
-            .about-portrait-caption {
-                margin-top: 11px;
-
-                font-size: 7px;
-
-                letter-spacing: 0.11em;
-            }
-
-
-            /* STORY */
 
             .about-story {
                 padding:
@@ -780,8 +652,6 @@
             }
 
 
-            /* PHILOSOPHY */
-
             .about-philosophy {
                 padding:
                     10vh 7vw
@@ -799,8 +669,6 @@
             }
 
 
-            /* CLOSING */
-
             .about-closing {
                 padding:
                     10vh 7vw
@@ -812,6 +680,7 @@
                 font-size: 53px;
             }
 
+
         }
 
     </style>
@@ -822,577 +691,532 @@
 <body class="about-page">
 
 
-    <!-- =================================================
-         MENU LATERALE
-    ================================================= -->
+<!-- =====================================================
+     MENU LATERALE
+===================================================== -->
 
-    <button
-        class="menu-trigger visible"
-        id="menuTrigger"
-        type="button"
-        aria-label="Apri menu"
-        aria-expanded="false"
+<button
+    class="menu-trigger visible"
+    id="menuTrigger"
+    type="button"
+    aria-label="Apri menu"
+    aria-expanded="false"
+>
+    <span>MENU</span>
+</button>
+
+
+<nav
+    class="menu"
+    id="menu"
+    aria-label="Menu principale"
+>
+
+    <div class="menu-inner">
+
+
+        <div class="menu-top">
+
+            <span>
+                AB ARCHITECT
+            </span>
+
+            <button
+                class="close"
+                id="closeMenu"
+                type="button"
+            >
+                CHIUDI ×
+            </button>
+
+        </div>
+
+
+        <div class="menu-links">
+
+            <a href="progetti.html">
+                Progetti
+            </a>
+
+            <a href="chi-siamo.html">
+                Chi siamo
+            </a>
+
+            <a href="index.html#contact">
+                Contatti
+            </a>
+
+        </div>
+
+
+        <div class="menu-bottom">
+
+            <span>
+                AB ARCHITECT
+            </span>
+
+            <span>
+                PALERMO · SICILIA
+            </span>
+
+        </div>
+
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header class="about-header">
+
+
+    <a
+        href="index.html"
+        class="about-header-logo"
+        aria-label="AB Architect — Home"
     >
 
-        <span>
-            MENU
-        </span>
+        <img
+            src="immagini/Logo_AB.png"
+            alt="AB Architect"
+        >
 
-    </button>
+    </a>
 
 
-    <nav
-        class="menu"
-        id="menu"
-        aria-label="Menu principale"
+    <a
+        href="index.html"
+        class="about-header-back"
     >
 
-        <div class="menu-inner">
+        ← Torna alla home
+
+    </a>
 
 
-            <div class="menu-top">
-
-                <span>
-                    AB ARCHITECT
-                </span>
+</header>
 
 
-                <button
-                    class="close"
-                    id="closeMenu"
-                    type="button"
-                >
-                    CHIUDI ×
-                </button>
 
+<!-- =====================================================
+     INTRO
+===================================================== -->
+
+<main>
+
+
+    <section class="about-intro">
+
+
+        <div class="about-intro-index">
+
+            <div class="section-number">
+                02 — L'ARCHITETTO
             </div>
 
-
-            <div class="menu-links">
-
-                <a href="progetti.html">
-                    Progetti
-                </a>
+        </div>
 
 
-                <a href="chi-siamo.html">
-                    Chi siamo
-                </a>
+        <div class="about-intro-content">
 
 
-                <a href="index.html#contact">
-                    Contatti
-                </a>
+            <h1 class="about-intro-title">
 
-            </div>
+                Alfio<br>
+                <em>Bucaro.</em>
 
-
-            <div class="menu-bottom">
-
-                <span>
-                    AB ARCHITECT
-                </span>
-
-
-                <span>
-                    PALERMO · SICILIA
-                </span>
-
-            </div>
+            </h1>
 
 
         </div>
 
-    </nav>
+
+    </section>
 
 
 
     <!-- =================================================
-         HEADER
+         MARE
     ================================================= -->
 
-    <header class="about-header">
+    <section class="about-image">
 
 
-        <a
-            href="index.html"
-            class="about-header-logo"
-            aria-label="AB Architect — Home"
-        >
+        <div class="about-image-frame">
 
             <img
-                src="immagini/Logo_AB.png"
-                alt="AB Architect"
+                src="immagini/Mare.jpg"
+                alt="Paesaggio mediterraneo della Sicilia"
             >
 
-        </a>
+        </div>
 
 
-        <a
-            href="index.html"
-            class="about-header-back"
-        >
+        <div class="about-image-caption">
 
-            ← Torna alla home
+            <span>
+                Sicilia
+            </span>
 
-        </a>
+            <span>
+                Luogo · Luce · Paesaggio
+            </span>
+
+        </div>
 
 
-    </header>
+    </section>
 
 
 
     <!-- =================================================
-         CONTENUTO
+         STORIA
     ================================================= -->
 
-    <main>
+    <section class="about-story">
 
 
-        <!-- =================================================
-             INTRO
-        ================================================= -->
+        <div class="about-story-label">
 
-        <section class="about-intro">
+            UNA STORIA DI PROGETTO
 
+        </div>
 
-            <div class="about-intro-index">
 
-                <div class="section-number">
-                    02 — L'ARCHITETTO
-                </div>
+        <div class="about-story-content">
 
-            </div>
 
+            <p class="about-story-lead">
 
-            <div class="about-intro-content">
-
-
-                <h1 class="about-intro-title">
-
-                    Alfio<br>
-
-                    <em>Bucaro.</em>
-
-                </h1>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             FOTO
-        ================================================= -->
-
-        <section class="about-portrait">
-
-
-            <div class="about-portrait-inner">
-
-
-                <div class="about-portrait-label">
-
-                    <span>
-                        LO SGUARDO
-                    </span>
-
-                    <span>
-                        AB ARCHITECT
-                    </span>
-
-                </div>
-
-
-                <div class="about-portrait-frame">
-
-                    <img
-                        src="immagini/Alfio_Bucaro.jpg"
-                        alt="Alfio Bucaro, architetto"
-                    >
-
-                </div>
-
-
-                <div class="about-portrait-caption">
-
-                    <span>
-                        Palermo · Sicilia
-                    </span>
-
-                    <span>
-                        Architettura · Progetto · Luogo
-                    </span>
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             STORIA
-        ================================================= -->
-
-        <section class="about-story">
-
-
-            <div class="about-story-label">
-
-                UNA STORIA DI PROGETTO
-
-            </div>
-
-
-            <div class="about-story-content">
-
-
-                <p class="about-story-lead">
-
-                    Come si trasforma un'idea
-                    in <em>realtà?</em>
-
-                </p>
-
-
-                <div class="about-story-text">
-
-
-                    <p>
-
-                        È da questa domanda che parte il mio lavoro.
-
-                        Progettare significa dare forma a qualcosa
-                        che ancora non esiste, ma anche capire ciò
-                        che esiste già: una persona, un luogo,
-                        un modo di vivere.
-
-                    </p>
-
-
-                    <p>
-
-                        Nel tempo ho imparato che un progetto
-                        non nasce mai da una sola idea.
-
-                        Nasce dall'incontro tra chi lo immagina,
-                        chi lo progetta e il luogo che lo accoglierà.
-
-                    </p>
-
-
-                    <p>
-
-                        Per questo considero il rapporto con il
-                        committente una parte fondamentale del
-                        progetto.
-
-                        Ascoltare esigenze, desideri e intuizioni
-                        permette di trasformare qualcosa di ancora
-                        indefinito in una direzione concreta.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             IDEA DI ARCHITETTURA
-        ================================================= -->
-
-        <section class="about-philosophy">
-
-
-            <div class="about-philosophy-top">
-
-
-                <div class="section-number">
-                    IL MIO MODO DI PROGETTARE
-                </div>
-
-
-                <div class="section-number">
-                    AB ARCHITECT
-                </div>
-
-
-            </div>
-
-
-            <div class="about-philosophy-statement">
-
-                Non mi interessa
-                un'architettura costruita
-                intorno a <em>uno stile.</em>
-
-            </div>
-
-
-            <p class="about-philosophy-bottom">
-
-                Mi interessa un'architettura capace di trovare
-                il proprio carattere nel rapporto con il luogo,
-                con la luce, con la materia e con chi la vivrà.
-
-                <br><br>
-
-                Ogni progetto ha una storia diversa e richiede
-                un modo diverso di essere pensato.
-
-                L'architettura, per me, non è una forma da imporre,
-                ma un equilibrio da costruire tra ciò che esiste,
-                ciò che serve e ciò che ancora deve nascere.
+                Come si trasforma un'idea
+                in <em>realtà?</em>
 
             </p>
 
 
-        </section>
+            <div class="about-story-text">
 
 
+                <p>
 
-        <!-- =================================================
-             COLLABORAZIONE
-        ================================================= -->
+                    È da questa domanda che parte il mio lavoro.
 
-        <section class="about-story">
-
-
-            <div class="about-story-label">
-
-                IL PROGETTO È UN PERCORSO
-
-            </div>
-
-
-            <div class="about-story-content">
-
-
-                <p class="about-story-lead">
-
-                    Ogni progetto
-                    nasce da un <em>incontro.</em>
+                    Progettare significa dare forma a qualcosa
+                    che ancora non esiste, ma anche capire ciò
+                    che esiste già: una persona, un luogo,
+                    un modo di vivere.
 
                 </p>
 
 
-                <div class="about-story-text">
+                <p>
 
+                    Nel tempo ho imparato che un progetto
+                    non nasce mai da una sola idea.
 
-                    <p>
-
-                        Credo che in ogni persona ci sia un modo
-                        unico di vivere e interpretare lo spazio.
-
-                        Il compito dell'architetto è riuscire a
-                        riconoscerlo e tradurlo in un progetto.
-
-                    </p>
-
-
-                    <p>
-
-                        Dalla prima intuizione al disegno,
-                        dalle scelte progettuali alla realizzazione,
-                        il percorso è fatto di confronto,
-                        decisioni e ricerca.
-
-                    </p>
-
-
-                    <p>
-
-                        Il risultato non dovrebbe essere semplicemente
-                        un edificio bello da guardare.
-
-                        Dovrebbe essere uno spazio che, nel tempo,
-                        riesce ad appartenere a chi lo vive.
-
-                    </p>
-
-
-                </div>
-
-
-            </div>
-
-
-        </section>
-
-
-
-        <!-- =================================================
-             CHIUSURA
-        ================================================= -->
-
-        <section class="about-closing">
-
-
-            <div class="about-closing-inner">
-
-
-                <div class="about-closing-number">
-
-                    AB ARCHITECT
-
-                </div>
-
-
-                <h2 class="about-closing-title">
-
-                    L'architettura
-                    comincia dall'<em>ascolto.</em>
-
-                </h2>
-
-
-                <p class="about-closing-text">
-
-                    Il progetto è il modo in cui quell'ascolto
-                    prende forma.
+                    Nasce dall'incontro tra chi lo immagina,
+                    chi lo progetta e il luogo che lo accoglierà.
 
                 </p>
 
 
-                <a
-                    href="index.html#contact"
-                    class="about-contact-link"
-                >
+                <p>
 
-                    Parliamo del tuo progetto
+                    Per questo considero il rapporto con il
+                    committente una parte fondamentale del
+                    progetto.
 
-                    <span>
-                        →
-                    </span>
+                    Ascoltare esigenze, desideri e intuizioni
+                    permette di trasformare qualcosa di ancora
+                    indefinito in una direzione concreta.
 
-                </a>
+                </p>
 
 
             </div>
 
 
-        </section>
+        </div>
 
 
-    </main>
+    </section>
 
 
 
     <!-- =================================================
-         FOOTER
+         IDEA DI ARCHITETTURA
     ================================================= -->
 
-    <footer>
+    <section class="about-philosophy">
 
 
-        <!-- =================================================
-             LOGO
-        ================================================= -->
+        <div class="about-philosophy-top">
 
-        <div class="footer-logo">
 
-            <img
-                src="immagini/Logo_AB.png"
-                alt="AB Architect"
-            >
+            <div class="section-number">
+                IL MIO MODO DI PROGETTARE
+            </div>
+
+
+            <div class="section-number">
+                AB ARCHITECT
+            </div>
+
 
         </div>
 
 
+        <div class="about-philosophy-statement">
 
-        <!-- =================================================
-             CENTRO
-        ================================================= -->
-
-        <div class="footer-center">
+            Non mi interessa
+            un'architettura costruita
+            intorno a <em>uno stile.</em>
 
         </div>
 
 
+        <p class="about-philosophy-bottom">
 
-        <!-- =================================================
-             CONTATTI
-        ================================================= -->
+            Mi interessa un'architettura capace di trovare
+            il proprio carattere nel rapporto con il luogo,
+            con la luce, con la materia e con chi la vivrà.
 
-        <div class="footer-right">
+            <br><br>
+
+            Ogni progetto ha una storia diversa e richiede
+            un modo diverso di essere pensato.
+
+            L'architettura, per me, non è una forma da imporre,
+            ma un equilibrio da costruire tra ciò che esiste,
+            ciò che serve e ciò che ancora deve nascere.
+
+        </p>
 
 
-            <div class="footer-contact-name">
+    </section>
 
-                Alfio Giuseppe Bucaro
+
+
+    <!-- =================================================
+         COLLABORAZIONE
+    ================================================= -->
+
+    <section class="about-story">
+
+
+        <div class="about-story-label">
+
+            IL PROGETTO È UN PERCORSO
+
+        </div>
+
+
+        <div class="about-story-content">
+
+
+            <p class="about-story-lead">
+
+                Ogni progetto
+                nasce da un <em>incontro.</em>
+
+            </p>
+
+
+            <div class="about-story-text">
+
+
+                <p>
+
+                    Credo che in ogni persona ci sia un modo
+                    unico di vivere e interpretare lo spazio.
+
+                    Il compito dell'architetto è riuscire a
+                    riconoscerlo e tradurlo in un progetto.
+
+                </p>
+
+
+                <p>
+
+                    Dalla prima intuizione al disegno,
+                    dalle scelte progettuali alla realizzazione,
+                    il percorso è fatto di confronto,
+                    decisioni e ricerca.
+
+                </p>
+
+
+                <p>
+
+                    Il risultato non dovrebbe essere semplicemente
+                    un edificio bello da guardare.
+
+                    Dovrebbe essere uno spazio che, nel tempo,
+                    riesce ad appartenere a chi lo vive.
+
+                </p>
+
 
             </div>
 
 
-            <div class="footer-contact-role">
+        </div>
 
-                Architetto
 
+    </section>
+
+
+
+    <!-- =================================================
+         CHIUSURA
+    ================================================= -->
+
+    <section class="about-closing">
+
+
+        <div class="about-closing-inner">
+
+
+            <div class="about-closing-number">
+                AB ARCHITECT
             </div>
 
 
-            <div class="footer-contact-details">
+            <h2 class="about-closing-title">
 
-                Via Loreto, 198<br>
+                L'architettura
+                comincia dall'<em>ascolto.</em>
 
-                90010 Altavilla Milicia (PA)<br>
-
-                Tel. +39 340 587 9612<br>
-
-                <a href="mailto:alfiobucaro@gmail.com">
-                    alfiobucaro@gmail.com
-                </a>
-
-            </div>
+            </h2>
 
 
+            <p class="about-closing-text">
 
-            <div class="footer-social">
+                Il progetto è il modo in cui quell'ascolto
+                prende forma.
 
-
-                <a
-                    href="https://www.instagram.com/alfiobucaroarchitetto"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Instagram"
-                >
-                    IG
-                </a>
-
-
-                <a
-                    href="https://www.facebook.com/bucaroalfio/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Facebook"
-                >
-                    FB
-                </a>
-
-
-            </div>
-
+            </p>
 
 
             <a
-                href="privacy.html"
-                class="footer-privacy"
+                href="index.html#contact"
+                class="about-contact-link"
             >
-                Privacy
+
+                Parliamo del tuo progetto
+
+                <span>
+                    →
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+
+<footer>
+
+
+    <!-- =================================================
+         LOGO
+    ================================================= -->
+
+    <div class="footer-logo">
+
+        <img
+            src="immagini/Logo_AB.png"
+            alt="AB Architect"
+        >
+
+    </div>
+
+
+
+    <!-- =================================================
+         CENTRO
+    ================================================= -->
+
+    <div class="footer-center">
+
+
+        
+
+
+    </div>
+
+
+
+    <!-- =================================================
+         CONTATTI
+    ================================================= -->
+
+    <div class="footer-right">
+
+
+        <div class="footer-contact-name">
+            Alfio Giuseppe Bucaro
+        </div>
+
+
+        <div class="footer-contact-role">
+            Architetto
+        </div>
+
+
+        <div class="footer-contact-details">
+
+            Via Loreto, 198<br>
+
+            90010 Altavilla Milicia (PA)<br>
+
+            Tel. +39 340 587 9612<br>
+
+            <a href="mailto:alfiobucaro@gmail.com">
+                alfiobucaro@gmail.com
+            </a>
+
+        </div>
+
+
+
+        <div class="footer-social">
+
+
+            <a
+                href="https://www.instagram.com/alfiobucaroarchitetto"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+            >
+                IG
+            </a>
+
+
+            <a
+                href="https://www.facebook.com/bucaroalfio/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+            >
+                FB
             </a>
 
 
@@ -1400,35 +1224,48 @@
 
 
 
-        <!-- =================================================
-             COPYRIGHT
-        ================================================= -->
-
-        <div class="footer-bottom">
-
-
-            <span>
-                © 2026 Arch. Alfio Bucaro
-            </span>
+        <a
+            href="privacy.html"
+            class="footer-privacy"
+        >
+            Privacy 
+        </a>
 
 
-            <span>
-                Designed by …
-            </span>
-
-
-        </div>
-
-
-    </footer>
+    </div>
 
 
 
     <!-- =================================================
-         JAVASCRIPT
+         COPYRIGHT
     ================================================= -->
 
-    <script src="js/script.js"></script>
+    <div class="footer-bottom">
+
+
+        <span>
+            © 2026 Arch. Alfio Bucaro
+        </span>
+
+
+        <span>
+            Designed by …
+        </span>
+
+
+    </div>
+
+
+</footer>
+
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="js/script.js"></script>
 
 
 </body>
